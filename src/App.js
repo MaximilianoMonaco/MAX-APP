@@ -7,7 +7,7 @@ function App() {
   const [message,setmessage] = useState("");
 
   const emailValidation=()=>{
-    const regEx = /^[\w._+-]+@+(mercadolibre|mercadolivre)+\.com/gm
+    const regEx = /^[\w._+-]+@+(mercadolibre|mercadolivre)+((\.com)|(\.com)+[a-z]{1,2})/gm
     if(regEx.test(email)){
       setmessage("mail valido")
     }else if(!regEx.test(email) && email !== ""){
